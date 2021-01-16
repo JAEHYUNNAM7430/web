@@ -10,8 +10,36 @@
         <div class="header">
           <div class="searchArea">
             <form>
-              <input type="search" placeholder="search">
-              <span>검색</span>
+
+              <input onkeyup="filter(this)" type="text" id="value" placeholder="search">
+              <script type="text/javascript">
+              	 function filter(self){
+
+        var value, name, item, i;
+
+        value = document.getElementById("#value").value.toUpperCase();
+        item = document.getElementsByClassName("item");
+
+        for(i=0;i<item.length;i++){
+          name = item[i].getElementsByClassName("name");
+          if(name[0].innerHTML.toUpperCase().indexOf(value) > -1){
+            item[i].style.display = "flex";
+          }else{
+            item[i].style.display = "none";
+          }
+        }
+
+      }
+      function search(self){
+      	filter(this);
+      }
+
+              </script>
+
+              <span> <input type="button" id="button1" onclick="search(this);" value="검색"
+              style="border: none; background: transparent;color:#fff;" />
+          	</span>
+      
             </form>
           </div>
           <ul class="nav">
@@ -110,20 +138,20 @@
             <img src="image/food.png">
           </div>
           <div class="contents2">
-              <h2>이것이 오징어야, 문어야?</h2>
-              이것이 오징어인지 문어인지 헷갈리시는 분들도 있을거에요. <br>
-              왜냐면 이것은 그냥 Pixabay에서 오징어라고 검색했더니 나온 이미지인데 <br>
-              오징어 같은 아무것이나 검색이 된것 같아요. <br><br>
+              <h2>ㅇㅇㅇㅇㅇㅇ</h2>
+              ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ <br>
+              ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ <br>
+              ㅇㅇㅇㅇㅇㅇㅇㅇㅇ<br><br>
               
-              총알오징어는, 사실 어떤 특정한 품종을 가진 게 아니랍니다. <br>
-              우리가 사먹지 말아야 한다는 것이죠. <br>
-              불과 약 5년전만 해도 시장에 가면 냉동오징어 한마리에 천원이면 샀는데, <br>
-              이젠 두마리에 7~8천원씩 하니, 더이상 서민음식이 아니게 된거죠. <br><br>
+              ㅇㅇ. <br>
+              ㅇ <br>
+              ㅇ, <br>
+              ㅇ <br><br>
               
-              얼마전에는 가격을 비교해 보았더니 마른오징어를 기준으로 <br>
-              같은 그람수에 같은 가격이 나올 정도로 천정부지로 오징어값이 치솟았답니다. <br>
-              그런 오징어, 못생겼다고 놀리지 말고 <br>
-              이제 소중하게 대해주어야 하지 않을까요?<br>
+              ㅇ<br>
+              ㅇ <br>
+              ㅇ <br>
+              ㅇ<br>
           </div>
         </div>
       </div>
@@ -142,10 +170,10 @@
       <div class="footer">
         <div>LOGO</div>
         <div>
-          CEO. 타모디자인 <br>
-          Addr. 서울특별시 금천구 가산1로 280-3 우림하이엔드타워 6차 14F 고객상담실 Fax/Tel. <br>
-          02 - 223 -2912~5 <br>
-          COPYRIGHT 2019. TAMO. ALL RIGHT RESERVED.
+          CEO. 남재현 <br>
+          Addr. 서울시 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ <br>
+          010-7253-7430 <br>
+          COPYRIGHT ㅇㅇㅇㅇㅇㅇ
         </div>
       </div>
     </div>

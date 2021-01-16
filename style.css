@@ -80,7 +80,7 @@ h1 {
 }
 
 .nav > li > a {
-  color: #fff;
+  color: black;
 }
 
 .amount{
@@ -112,7 +112,7 @@ h1 {
 }
 .intro_text > h1,
 .intro_text > h4{
-  color:#fff;
+  color:black;
 }
 
 /* main_text0 */
